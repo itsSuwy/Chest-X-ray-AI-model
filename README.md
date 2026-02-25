@@ -1,2 +1,3 @@
 # Proyecto_samsung
-Repositorio de nuestro proyecto de Samsung: El tema esta por decidirse aun.
+
+Proyecto de inteligencia artificial encargado en el analisis de radiografias del cuerpo humano para determinar la presencia de anomalias dentro del paciente. 
