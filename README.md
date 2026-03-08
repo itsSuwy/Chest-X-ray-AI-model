@@ -1,3 +1,3 @@
-# VENA
+# Vena
 
-VENA es un modelo de inteligencia artificial enfocado en el analisis de radiografias del cuerpo humano para determinar la presencia de anomalias dentro del paciente. 
+Vena es un modelo de inteligencia artificial enfocado en el analisis y deteccion de anomalias presentadas en radiografias del torax humano. 
