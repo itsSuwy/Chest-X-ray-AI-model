@@ -24,8 +24,8 @@ Para desarrollarlo se conto con la colaboracion de:
 
 <div align="center">
   <img src="media/gradcam_comparativo_v4.png" width="1000">
-    <div align="center" style="margin-bottom: 25px;">
-      <br>Vista de como el modelo percibe una radiografia en busca de anomalias y como las refleja en un mapa de calor, evaluando los dos tipos de pacientes posibles:
+    <div align="center">
+      <br>Vista de como el modelo percibe una radiografia en busca de anomalias y como las refleja en un mapa de calor, comparando un caso sano frente a un caso con anomalía detectada.
     </div>
 </div> 
 
@@ -41,6 +41,7 @@ Vena cumple los siguientes puntos:
 
 No obstante Vena tambien busca salirse de los entornos convencionales que dependen de Conda como gestor de paquetes y del propio entorno virtual, por ello se opto por utilizar UV como nucleo del proyecto, aprovechando su eficiencia, velocidad y organizacion para llevar a cabo su labor. Es por ello que dentro de la estructura del proyecto, existiran archivos nativos de este gestor, para facilitar la reproducibilidad del mismo proyecto, siendo los mas importantes `uv.lock` y `pyproject.toml`.
 
+---
 ## Instalación 
 ### (Funcion parcialmente implementada - Leer el disclaimer)
 ### 1) Clonar el repositorio
@@ -55,6 +56,9 @@ $ cd vena
 ```bash
 $ uv sync
 ```
+Notese que para usar `uv sync`, el equipo en donde se ejecutara el proyecto debe contar con uv instalado.
+
+---
 
 <div align="center">  
 
@@ -62,30 +66,57 @@ $ uv sync
 </div>
 
 <div align="center">
-    <img src="media/curva_roc_v4.png" width="800">
-    <div align="center" style="margin-bottom: 25px;">
-      <br>Curva ROC de la clasificación
-    </div>
-    <img src="media/kmeans_perfil_clinico.png" width="900">
-    <div align="center" style="margin-bottom: 25px;">
-      <br>Características que definieron a cada cluster
-    </div>
-    <img src="media/mae_por_rango_v4.png" width="800">
-    <div align="center">
-      <br>Métricas de MAE por rango de edad
-    </div>
+
+  <p><strong>Curva ROC de la clasificación</strong></p>
+  <img src="media/curva_roc_v4.png" width="800">
+
+  <br><br>
+
+  <p><strong>Características que definieron a cada cluster</strong></p>
+  <img src="media/kmeans_perfil_clinico.png" width="900">
+
+  <br><br>
+
+  <p><strong>Métricas de MAE por rango de edad</strong></p>
+  <img src="media/mae_por_rango_v4.png" width="800">
+
 </div>
 
-## Disclaimer  
+---
+## Documentación
+- [Arquitectura del modelo](docs/arquitectura.md)
+- [Metodología y dataset](docs/metodologia.md)
+- [Resultados completos](docs/resultados.md)
+- [Guía de reproducibilidad](docs/reproducibilidad.md)
+
+---
+## Aclaracion
 Vena empezo siendo un proyecto individual de notebooks de ejecucion en google colab, dicha decision hizo que internamente la logica siga sujeta a variables del mismo google drive. No obstante Vena se encuentra en un proceso de transicion definitivo a repositorio personal para que su despliegue en local como en la nube resulte totalmente directo, logrando una reproducibilidad limpia con poca o nula intervencion externa.
 
+---
+
+## Licencia
+Este proyecto se distribuye bajo licencia MIT, ver [LICENSE](LICENSE) para el texto completo.
+
+---
+
+## Disclaimer médico
+Vena es un proyecto educativo/de portafolio. No está validado clínicamente ni aprobado para uso diagnóstico real.
+
+---
+
+## Estado actual 
+- [ ] Migración completa fuera de Google Colab
+- [ ] Reconstrucción del pipeline de data cleaning
+- [ ] Limpieza final de notebooks
+---
 <div align="center">
 
 ### Stack involved
 </div>
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,tensorflow,gcp,github" />
+  <img src="https://skillicons.dev/icons?i=python,tensorflow,sklearn,opencv,gcp,github" />
 </div> 
 
 <div align="center">
