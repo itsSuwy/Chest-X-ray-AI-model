@@ -1,0 +1,1 @@
+Aqui se expresara los criterios que se siguieron para poder desarrollar a Vena (datasets utilizados, filtros de contenido, etc).

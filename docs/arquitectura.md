@@ -1,0 +1,1 @@
+Aqui se desarrollara como funciona internamente Vena, su ruta de trabajo (pipeline) asi como herramientas de transfer learning + gradcam que fueron utilizadas

@@ -1,0 +1,1 @@
+Retrospectiva honesta de lo que es y no capaz Vena de poder hacer
