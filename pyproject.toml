@@ -1,7 +1,7 @@
 [project]
 name = "vena"
 version = "0.1.0"
-description = "Add your description here"
+description = "Detection of anomalies in chest radiographs via classification, regression, and clustering using DenseNet121"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
