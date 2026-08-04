@@ -6,6 +6,8 @@ dist/
 wheels/
 *.egg-info
 
+embeddings_train.npy
+
 data/processed/
 data/raw/
 
